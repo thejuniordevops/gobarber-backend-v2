@@ -1,9 +1,9 @@
 /* eslint-disable camelcase */
+import AppError from '@shared/errors/AppError';
 import { startOfHour } from 'date-fns';
 import { getCustomRepository } from 'typeorm';
-import AppError from '../errors/AppError';
-import Appointment from '../models/Appointment';
-import AppointmentsRepository from '../repositories/AppointmentsRepository';
+import Appointment from '../infra/typeorm/entities/Appointment';
+import AppointmentsRepository from '../infra/typeorm/repositories/AppointmentsRepository';
 
 interface RequestDTO {
   provider_id: string;
