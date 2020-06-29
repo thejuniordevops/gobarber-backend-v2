@@ -1,11 +1,11 @@
 import uploadConfig from '@config/upload';
+import '@shared/container';
 import AppError from '@shared/errors/AppError';
 import '@shared/infra/typeorm';
 import express, { NextFunction, Request, Response } from 'express';
 import 'express-async-errors';
 import 'reflect-metadata';
 import routes from './routes';
-
 
 const app = express();
 
